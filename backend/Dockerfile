@@ -1,6 +1,9 @@
 #declare what image to use
 FROM python:latest
 
+#host.docker.internal ->localhost
+#curl -X POST -d '{"message":"Hello world"}' -H "Content-Type: application/json" http://host.docker.internal:8080/api/chats/
+RUN apt-get update && apt-get install -y curl
 #create a python virtual environment
 #isolate python dependencies from the system python
 RUN python -m venv /opt/venv/
