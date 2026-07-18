@@ -33,7 +33,7 @@ def chat_list_messages(session: Session = Depends(get_session)):
 
 
 # curl -X POST -d '{"message": "Research why it is good to go outside and email me the results"}' -H "Content-Type: application/json" http://localhost:8080/api/chats/
-# curl -X POST -d '{"message": "Research what is the best type of food in different parts of the world and email me the results"}' -H "Content-Type: application/json" https://docker-api-fastapi-python-app-3jid9.ondigitalocean.app/api/chats/
+# curl -X POST -d '{"message": "Research what is the best type of food in different parts of the world and email me the results"}' -H "Content-Type: application/json" https://docker-api-fastapi-python-app-nw8lv.ondigitalocean.app/
 
 @router.post("/", response_model=SupervisorMessageSchema)
 def chat_create_message(
